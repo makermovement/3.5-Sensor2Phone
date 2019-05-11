@@ -1,4 +1,4 @@
-# 3.5mm
+# 3.5mm-Sensor2Phone
 Check out our blog - The Hacker Diary(http://thehackerdiary.wordpress.com/) for a detailed walkthrough of the project. The basic code used for the project was freqRead.py which prints out the frequency value. For additional modules to be used for specific application check out additionalModule.py. 
 <br>
 <br>
