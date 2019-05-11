@@ -7,7 +7,7 @@ Check out the wiki( https://github.com/makermovement/3.5-Sensor2Phone/wiki ) for
 
 ---
 By: <br>
-Suresh B (13me126.suresh@nitk.edu.in) and <br>
-Keerthi Vasan G C (117009236@sastra.ac.in). . 
+Suresh B (contactsureshnarayan@gmail.com) and <br>
+Keerthi Vasan G C (kvch@ucdavis.edu). . 
 
 
