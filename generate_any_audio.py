@@ -25,6 +25,6 @@ f = open('test.wav','wb')
 
 for i in y:
 	print i
-	f.write(struct.pack('b',i))
+	f.write(struct.pack('f',i))
 f.close()
 
