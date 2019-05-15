@@ -24,7 +24,6 @@ f = open('test.wav','wb')
 ## Open as Signed 8-bit on Audacity - Watch Video for instructions
 
 for i in y:
-	print i
-	f.write(struct.pack('b',i))
+	f.write(struct.pack('b',int(i)))
 f.close()
 
