@@ -2,13 +2,13 @@ import struct
 import numpy as np
 from scipy import signal as sg
 
-Fs = 44100                    ## Sampling Rate
-f = 440                       ## Frequency (in Hz)
-sample = 44100                ## Number of samples 
-x = np.arange(sample)
+sampling_rate = 44100                    ## Sampling Rate
+freq = 440                               ## Frequency (in Hz)
+samples = 44100                          ## Number of samples 
+x = np.arange(samples)
 
 ####### sine wave ###########
-y = 100*np.sin(2 * np.pi * f * x / Fs)
+y = 100*np.sin(2 * np.pi * freq * x / sampling_rate)
 
 ####### square wave ##########
 # y = 100* sg.square(2 *np.pi * f *x / Fs )
@@ -21,7 +21,9 @@ y = 100*np.sin(2 * np.pi * f * x / Fs)
 
 
 f = open('test.wav','wb')
-## Open as Signed 8-bit on Audacity - Watch Video for instructions
+## Instructions to play test.wav on computer
+## 1. Open as Signed 8-bit on Audacity - Watch Video at https://bit.ly/2YwmN9q for instructions
+## 2. Or using SoX: play -t raw -r 44.1k -e signed -b 8 -c 1 test.wav
 
 for i in y:
 	f.write(struct.pack('b',int(i)))
